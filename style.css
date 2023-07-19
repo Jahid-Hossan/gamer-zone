@@ -365,6 +365,39 @@ body {
 }
 
 
+/* icons */
+
+.icon-content {
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    flex-wrap: wrap;
+    max-width: 80%;
+    gap: 27px;
+    padding: 30px 0;
+}
+
+.icons-conteiner {
+    display: flex;
+    border-radius: 50px;
+    background: #FFF;
+    
+}
+
+.icon-title{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding: 0 16px;
+}
+
+.icon-img{
+    padding: 10px;
+}
+
+
 /* footer style */
 
 footer {
@@ -637,13 +670,12 @@ footer .logo {
     .play-instant,
     .banner-conteiner,
     .section-gamer-conteiner,
-    .online-games-content
-     {
+    .online-games-content {
         flex-direction: column;
         padding: 20px;
     }
 
-    .gamer-conteiner{
+    .gamer-conteiner {
         flex-direction: column-reverse;
     }
 
@@ -652,18 +684,22 @@ footer .logo {
     }
 
     .gamer-img>img,
-    .play-img>img
-    {
+    .play-img>img {
         width: 100%;
     }
 
-    .gamer-content .primary-title,.gamer-content .primary-text, .purpose-text,.purpose-quote {
+    .gamer-content .primary-title,
+    .gamer-content .primary-text,
+    .purpose-text,
+    .purpose-quote {
         text-align: left;
     }
 
-    .gamer-content .primary-btn,.purpose-text{
+    .gamer-content .primary-btn,
+    .purpose-text {
         margin: 20px 0;
     }
+
     /* .online-games-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -673,22 +709,23 @@ footer .logo {
     .online-games-box .game-img{
         width: 100%;
     } */
-    .play-text{
+    .play-text {
         width: 100%;
         text-align: left;
     }
-    .play-text .primary-text{
+
+    .play-text .primary-text {
         margin: 10px 0 20px;
     }
 
     .small-img {
-        
+
         top: 55%;
         right: 22%;
-        
+
     }
 
-    
+
     .options .primary-text,
     .copyright {
         margin: auto;
@@ -698,7 +735,7 @@ footer .logo {
 
     .options {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 0;
     }
