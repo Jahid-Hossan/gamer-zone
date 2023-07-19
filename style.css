@@ -53,7 +53,7 @@ body {
 
 .nav {
     display: flex;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     justify-content: space-between;
     padding-top: 40px;
     background: #FFF;
@@ -135,25 +135,25 @@ body {
 
 /* banner style */
 
+.bg-img {
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+}
+
 .banner-conteiner {
     display: flex;
     align-items: center;
     justify-items: center;
-    max-width: 1920px;
+    max-width: 75%;
+    justify-content: space-between;
     margin: auto;
+    gap: 5rem;
+
 
 }
 
 .text-banner-content {
-    background-image: url(./images/Group\ 14.png);
-    background-size: cover;
-    margin: 0%;
-    width: 900px;
-    height: 700px;
-    text-align: center;
-    display: flex;
-    justify-items: center;
-
+    /* margin-left: 0; */
 
 }
 
@@ -191,18 +191,28 @@ body {
     text-align: left;
 }
 
-.banner-img-content {
+/* .banner-img-content {
     margin-left: -50px;
-}
+    display: flex;
+    justify-items: right;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+} */
 
+
+.banner-img-content img {
+    width: 100%;
+    display: flex;
+    justify-items: right;
+
+}
 
 /* gamers style */
 
 
 .section-gamer-conteiner {
     background: #fff9fc;
-    max-width: 1920px;
-    height: 600px;
 }
 
 
@@ -211,7 +221,7 @@ body {
     justify-content: ;
     justify-items: center;
     align-items: center;
-    max-width: 1440px;
+    max-width: 75%;
 }
 
 .gamer-conteiner .primary-title {
@@ -254,58 +264,282 @@ body {
 
 /* online games style */
 
-.online-games-conteiner{
+.online-games-conteiner {
     text-align: center;
     margin-top: 120px;
+    max-width: 75%;
 }
 
-.online-games-conteiner .primary-text{
+.online-games-conteiner .primary-text {
     margin: 16px auto 50px;
 }
 
-.online-games-content{
+.online-games-content {
     display: flex;
-    justify-content: space-around;
-    /* margin-top: 30px; */
+    align-items: center;
+    justify-items: center;
 
 }
 
-.online-games-content .primary-text{
-   max-width: 320px;
-   text-align: left;
+.online-games-content .primary-text {
+    max-width: 320px;
+    text-align: left;
 }
 
 
-footer{
-    height: 640px;
+.game-img:hover {
+    cursor: pointer;
+    border: 5px solid #FF42A5;
+    border-radius: 2px;
+    visibility: ;
+    opacity: .5;
+    visibility: visible;
+}
+
+.play-btn:hover {
+    visibility: visible;
+}
+
+..game-img {
+    margin-top: 20px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #3C354F;
+    /* opacity: 0; */
+    color: white;
+    font-size: 3rem;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    visibility: hidden;
+
+}
+
+.for-btn {
+    position: relative;
+}
+
+
+
+/* play instant style */
+
+.play-instant {
+    display: flex;
+    max-width: 75%;
+    align-items: center;
+    padding-bottom: 120px;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.play-text {
+    width: 40%;
+    margin: 0;
+    text-align: right;
+}
+
+.play-img {
+    position: relative;
+    margin: 0;
+}
+
+.play-img>img {}
+
+.small-img {
+    position: absolute;
+    position: absolute;
+    top: 60%;
+    right: 70%;
+}
+
+
+/* footer style */
+
+footer {
+    height: 400px;
     background: #0B0223;
 }
 
 
 
-footer .logo{
+footer .logo {
     display: flex;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
-.gameeee{
+.gameeee {
     color: #FFF;
 }
 
-.f-logo{
-   margin-right: 0;
+.f-logo {
+    margin-right: 0;
 
 }
 
-.options{
+.options {
     display: flex;
     margin: auto;
     justify-items: center;
-    max-width: 1200px;
+    max-width: 50%;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.options .primary-text{
+.options .primary-text {
     color: #FFF;
-    padding: 40px;
-   
+    padding: 0 20px;
+
+}
+
+.max-wi {
+    /* max-width: 1440px; */
+}
+
+.social-icons {
+    text-align: center;
+
+}
+
+.social-icons .fa-brands {
+    padding: 10px;
+}
+
+.privacy {
+    display: flex;
+    justify-content: space-around;
+    max-width: 70%;
+    margin-top: 20px;
+}
+
+.ft {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+    .nav,
+    .menu-bar,
+    .banner-conteiner,
+    .gamer-conteiner,
+    .play-instant,
+    .online-games-content,.options {
+        flex-direction: column;
+    }
+
+    .menu-bar{
+        gap: 0;
+    }
+
+    .menu
+    {
+    margin: 0;
+    justify-content: space-around;
+    padding: 20px
+
+    }
+
+
+    .menus {
+    justify-content: space-around;
+    margin: 0;
+    }
+
+    .bg-img {
+        background-size: 100%;
+        margin: 0;
+    }
+    .gamer-img>img{
+        width: 100%;
+    }
+
+    .gamer-conteiner{
+        text-align: center;
+    }
+
+    .gamer-conteiner .primary-title,.gamer-conteiner .primary-text{
+        text-align: center;
+    }
+    .gamer-content .primary-btn{
+        margin: 30px auto;
+    }
+
+    .purpose-quote,.purpose-text{
+        text-align: left;
+     
+    }
+    .play-text{
+        width: 100%;
+    }
+    
+    .play-img>img{
+        width: 100%;
+    }
+
+    .primary-text,.primary-title  {
+       
+        text-align: left;
+       
+    }
+
+    .small-img {
+        position: absolute;
+        position: absolute;
+        top: 68%;
+        right: 70%;
+        width: 40%;
+    }
+
+    .options .primary-text,footer .logo,.copyright{
+        margin: auto;
+        padding:3px;
+
+    }
+
+    .options{
+        padding: 0;
+    }
+
+    .copyright{
+        margin-top: 0;
+    }
+
+    .privacy{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
 }
