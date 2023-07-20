@@ -397,6 +397,12 @@ padding: 0 16px;
     padding: 10px;
 }
 
+.icons-conteiner:hover{
+    /* color: #FF42A5; */
+    border: 2px solid #FF42A5;
+    cursor: pointer;
+}
+
 
 /* footer style */
 
