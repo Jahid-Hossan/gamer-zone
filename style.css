@@ -380,24 +380,24 @@ body {
     display: flex;
     border-radius: 50px;
     background: #FFF;
-    
+
 }
 
-.icon-title{
+.icon-title {
     color: #0B0223;
-font-family: Work Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding: 0 16px;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0 16px;
 }
 
-.icon-img{
+.icon-img {
     padding: 10px;
 }
 
-.icons-conteiner:hover{
+.icons-conteiner:hover {
     /* color: #FF42A5; */
     border: 2px solid #FF42A5;
     cursor: pointer;
@@ -647,7 +647,14 @@ footer .logo {
     }
 
     .options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
         padding: 0;
+    }
+
+    .options .primary-text {
+        white-space: nowrap;
     }
 
     footer .logo {
@@ -661,11 +668,17 @@ footer .logo {
     .privacy {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
         max-width: 90%;
+        margin: 20px auto;
 
     }
 
-    footer {}
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 
@@ -741,14 +754,21 @@ footer .logo {
 
     .options {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
         padding: 0;
     }
+
+    .options .primary-text {
+        white-space: nowrap;
+    }
+
 
     footer .logo {
         padding-top: 20px;
     }
+
+
 
     .copyright {
         margin-top: 10px;
@@ -763,7 +783,11 @@ footer .logo {
     }
 
     footer {
-        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
     }
 
 }
